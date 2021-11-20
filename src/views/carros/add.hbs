@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    <form action="/carros/add" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="marca" class="form-control" placeholder="Marca" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="modelo" class="form-control" placeholder="Modelo">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="cantidad" class="form-control" placeholder="Cantidad">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="generacion" class="form-control" placeholder="Generación">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" rows="2" class="form-control" placeholder="Descripcion"></textarea>
+                        </div>
+                        <div class="form-group">
+                              <label for="upload-image-file"></label>
+                              <input type="file" class="form-control-file" name="imagen" id="imagen" placeholder="upload-image-file" aria-describedby="fileHelpId">
+                              <small id="fileHelpId" class="form-text text-muted">Por favor escoja la imagen</small>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
